@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = "Kim Sorensen";
 const currentYear = new Date().getFullYear();
-const profilePicture = "w02-task/images/placeholder.png";
+const profilePicture = "w02-task/images/me.png";
 
 
 
