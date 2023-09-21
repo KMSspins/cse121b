@@ -9,4 +9,6 @@ function createParagraph() {
   for (const button of buttons) {
     button.addEventListener("click", createParagraph);
   }
+
+
   

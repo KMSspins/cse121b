@@ -1,4 +1,4 @@
-// 🔍 Part 1 error
+// 🔍
 let userName = "Moroni";
 console.log(`Username: ${userName}`);
 userName = "Moronihah";
@@ -21,3 +21,5 @@ function total(...theNumbers) {
 	}
 	return sum
 }
+
+let firstName = "Antonia Francesca"
