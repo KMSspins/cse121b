@@ -59,18 +59,33 @@ document.getElementById("divideNumbers").addEventListener('click', divideNumbers
 
 /* Decision Structure */
 
+let today = new Date();
+let currentYear = "";
+currentYear = today.getFullYear();
+document.getElementById("year").textContent = currentYear;
+
 
 
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+document.getElementById("array").innerHTML = numbersArray;
 
 /* Output Odds Only Array */
+document.getElementById("odds").innerHTML = numbersArray.filter(number => number % 2 === 1);
+
 
 /* Output Evens Only Array */
+document.getElementById("evens").innerHTML = numbersArray.filter(number => number % 2 === 0);
 
 /* Output Sum of Org. Array */
+document.getElementById("sumOfArray").innerHTML = numbersArray.reduce((sum, number) => sum + number);
+
 
 /* Output Multiplied by 2 Array */
+document.getElementById("multiplied").innerHTML = numbersArray.map(number => number * 2);
 
 /* Output Sum of Multiplied by 2 Array */
+const firstStep = numbersArray.map( number => number * 2);
+document.getElementById("sumOfMultiplied").innerHTML = firstStep.reduce((sum, number) => sum + number);
