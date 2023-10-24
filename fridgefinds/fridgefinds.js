@@ -2,8 +2,6 @@ import { fetchRecipes } from './fetch.js';
 
 // import module that sorts the recipes
 
-//import {sortRecipes} from "./sortrecipes.js";
-
 //global variable needed
 
 let titleArray = [];
