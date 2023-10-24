@@ -80,21 +80,21 @@ const fetchRecipes = async () => {
 
 */
 
-  const sortRecipes = () => { 
+ /* const sortRecipes = () => { 
   const sortedResults = document.getElementById('sorted-results'); 
   sortedResults.innerHTML = '';
   sortedResults.innerHTML =  titleArray.sort();
      
   sortedResults.append(sortedResults);
    
-};
+};*/
 
 //event listener to call fetch recipes and then get recipes when the fetchrecipes button is clicked
 //const fetchRecipesButton = document.getElementById('#getRecipes');
 //fetchRecipesButton.addEventListener('click', fetchRecipes);
 
-document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
+//document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
 
 //event listener to call sort recipes when the sort recipes button is clicked
-const sortRecipesButton = document.getElementById('#sortRecipes');
-sortRecipesButton.addEventListener('click', sortRecipes);
+//const sortRecipesButton = document.getElementById('#sortRecipes');
+//sortRecipesButton.addEventListener('click', sortRecipes);
