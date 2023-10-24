@@ -18,7 +18,7 @@ const fetchRecipes = async () => {
     }
 });
   
-    data = await data.json(); 
+  let data = await data.json(); 
     console.log(data); 
   
   
@@ -29,17 +29,18 @@ const fetchRecipes = async () => {
 
 //assigning the results of the function to the recipe-results ID
 
-  const recipeResults = document.getElementById('recipe-results');
-  recipeResults.innerHTML = '';
+  //const recipeResults = document.getElementById('recipe-results');
+ // recipeResults.innerHTML = '';
 
-  //setting dishType to blank so can iterate through the data and add the info to each recipe card
-  let dishType = "";
-
+  
   //function to create each recipe card and assigning the data to a div
  
-  data.forEach((hit) => {
+  /*data.hits.forEach((hit) => {
   const recipeCard = document.createElement('div');
     recipeCard.className = 'recipe-card'; 
+
+  //setting dishType to blank so can iterate through the data and add the info to each recipe card
+    let dishType = "";
 
     //conditional to assign the meal type to the recipe card
 
@@ -77,7 +78,7 @@ const fetchRecipes = async () => {
        
   });
 
-
+*/
 
   const sortRecipes = () => { 
   const sortedResults = document.getElementById('sorted-results'); 
@@ -89,9 +90,11 @@ const fetchRecipes = async () => {
 };
 
 //event listener to call fetch recipes and then get recipes when the fetchrecipes button is clicked
-const fetchRecipesButton = document.getElementById('getRecipes');
-fetchRecipesButton.addEventListener('click', fetchRecipes);
+//const fetchRecipesButton = document.getElementById('#getRecipes');
+//fetchRecipesButton.addEventListener('click', fetchRecipes);
+
+document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
 
 //event listener to call sort recipes when the sort recipes button is clicked
-const sortRecipesButton = document.getElementById('sortRecipes');
+const sortRecipesButton = document.getElementById('#sortRecipes');
 sortRecipesButton.addEventListener('click', sortRecipes);
