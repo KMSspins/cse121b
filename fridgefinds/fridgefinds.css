@@ -1,0 +1,147 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML Selectors */
+body {
+    font-family: 'Roboto Serif', serif;
+    background-color: rgb(214, 227, 214);
+}
+
+header {
+    height: 20vh;
+    background-image: url(images/ello-AEU9UZstCfs-unsplash_2092x1454.jpeg);
+    background-size: cover;
+   }
+/* title of the program*/
+
+h1 {
+    text-align: center;
+    font-size: 3rem;  
+    margin: 0.5rem;
+    color:rgb(0, 15, 0);
+}
+
+/*tile of the recipe*/
+
+h2 {
+    font-size: 1rem;
+    text-align: left;
+    color:rgb(0, 15, 0);
+}
+
+/*meal type of the recipe*/
+
+h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    color:rgb(0, 15, 0);
+}
+
+/* title of the recipe*/
+
+#hero-words{
+   justify-content: center;
+   padding: 20px;
+   align-content: center;  
+}
+
+/* displayButtons*/
+
+#displayButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;      
+}
+
+/* get recipes button*/
+
+#getRecipes {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    color:rgb(0, 15, 0);
+    background-color: rgb(194, 13, 13);
+    border: none;
+    margin: 10px 10px 10px 100px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    grid-column-start: 1;       
+}
+
+#getRecipes:hover {
+    background-color: #f3cf31; /* Green */
+    color: white;
+  }
+
+  /*sort recipes button*/
+
+#sortRecipes {
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    color:rgb(0, 15, 0);
+    background-color: rgb(194, 13, 13);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    grid-column-start: 3;    
+}
+
+#sortRecipes:hover {
+    background-color: #f3cf31; /* Green */
+    color: white;
+}
+
+
+/*sorted results paragraph display, does not show until two buttons clicked*/
+
+#sorted-results {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgb(0, 15, 0);
+    }
+
+/*recipe results in grid format, does not show until button clicked*/
+     
+#recipe-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+    margin: 10px 0px 0px 30px;
+    justify-items: center;
+    align-items: center;
+}    
+
+
+/* recipe cards created as objects*/
+
+.recipeCard {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+}
+
+/*footer, copied from other assignments due in this class*/
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
