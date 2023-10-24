@@ -19,7 +19,7 @@ const fetchRecipes = async () => {
 });
   
   let data = await response.json(); 
-    console.log(data); 
+    console.log(data.hits); 
   
   
 //calling the display recipes function using the data received
