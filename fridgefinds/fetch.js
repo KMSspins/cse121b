@@ -14,5 +14,5 @@ export const fetchRecipes = async () => {
     
   //calling the display recipes function using the data received
   
-    displayRecipes(data);
+    return data;
   };

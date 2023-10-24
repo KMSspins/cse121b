@@ -34,9 +34,11 @@ let titleArray = [];
 
   //function to create each recipe card and assigning the data to a div
 
-  const displayRecipes = (data) => { 
+  const displayRecipes = async () => { 
     const recipeResults = document.getElementById('recipe-results');
     recipeResults.innerHTML = '';
+
+    const data = await fetchRecipes();
 
     data.hits.forEach((hit) => {
     const recipeCard = document.createElement('div');
