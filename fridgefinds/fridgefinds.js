@@ -36,7 +36,8 @@ const fetchRecipes = async () => {
 
   //function to create each recipe card and assigning the data to a div
  
-  data.hits.forEach((hit) => {
+ const recipeResults = (data) => {
+    data.hits.forEach((hit) => {
     const recipeCard = document.createElement('div');
     recipeCard.className = 'recipe-card'; 
 
@@ -75,6 +76,7 @@ const fetchRecipes = async () => {
     recipeResults.appendChild(recipeCard);  
        
   });
+};
 
 
   const sortRecipes = () => { 
