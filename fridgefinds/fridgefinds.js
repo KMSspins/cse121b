@@ -3,7 +3,7 @@
 //import {sortRecipes} from "./sortrecipes.js";
 
 //global variable needed
-// not sure where this variable needs to be let dishType = "";
+
 let titleArray = [];
 
 //fetching JSON data from api website
@@ -34,9 +34,12 @@ const fetchRecipes = async () => {
 
   
   //function to create each recipe card and assigning the data to a div
- 
-  /*data.hits.forEach((hit) => {
-  const recipeCard = document.createElement('div');
+  const displayRecipes = (data) => { 
+    const recipeResults = document.getElementById('recipe-results');
+    recipeResults.innerHTML = '';
+
+    data.hits.forEach((hit) => {
+    const recipeCard = document.createElement('div');
     recipeCard.className = 'recipe-card'; 
 
   //setting dishType to blank so can iterate through the data and add the info to each recipe card
@@ -77,8 +80,8 @@ const fetchRecipes = async () => {
     recipeResults.appendChild(recipeCard);  
        
   });
+};
 
-*/
 
  /* const sortRecipes = () => { 
   const sortedResults = document.getElementById('sorted-results'); 
