@@ -18,7 +18,7 @@ const fetchRecipes = async () => {
     }
 });
   
-  let data = await data.json(); 
+  let data = await response.json(); 
     console.log(data); 
   
   
@@ -93,8 +93,10 @@ const fetchRecipes = async () => {
 //const fetchRecipesButton = document.getElementById('#getRecipes');
 //fetchRecipesButton.addEventListener('click', fetchRecipes);
 
-//document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
+document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
 
 //event listener to call sort recipes when the sort recipes button is clicked
 //const sortRecipesButton = document.getElementById('#sortRecipes');
 //sortRecipesButton.addEventListener('click', sortRecipes);
+
+document.getElementById('sortRecipes').addEventListener('click', sortRecipes);
