@@ -18,7 +18,8 @@ const fetchRecipes = async () => {
     }
 });
   
-    data = await data.json();  
+    data = await data.json(); 
+    console.log(data); 
   
   
 //calling the display recipes function using the data received
@@ -36,8 +37,8 @@ const fetchRecipes = async () => {
 
   //function to create each recipe card and assigning the data to a div
  
-  data.hits.forEach((hit) => {
-    const recipeCard = document.createElement('div');
+  data.forEach((hit) => {
+  const recipeCard = document.createElement('div');
     recipeCard.className = 'recipe-card'; 
 
     //conditional to assign the meal type to the recipe card
