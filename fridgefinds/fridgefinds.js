@@ -1,6 +1,6 @@
 // import module that sorts the recipes
 
-import {sortRecipes} from "./sortrecipes.js";
+//import {sortRecipes} from "./sortrecipes.js";
 
 //global variable needed
 // not sure where this variable needs to be let dishType = "";
@@ -77,14 +77,14 @@ const fetchRecipes = async () => {
   });
 
 
-  //const sortRecipes = () => { 
-  //const sortedResults = document.getElementById('sorted-results'); 
-  //sortedResults.innerHTML = '';
-  //sortedResults.innerHTML =  titleArray.sort();
+  const sortRecipes = () => { 
+  const sortedResults = document.getElementById('sorted-results'); 
+  sortedResults.innerHTML = '';
+  sortedResults.innerHTML =  titleArray.sort();
      
-  //sortedResults.append(sortedResults);
+  sortedResults.append(sortedResults);
    
-//};
+};
 
 //event listener to call fetch recipes and then get recipes when the fetchrecipes button is clicked
 const fetchRecipesButton = document.getElementById('getRecipes');
