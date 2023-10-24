@@ -6,7 +6,7 @@
 
 let titleArray = [];
 
-//fetching JSON data from api website
+//fetching JSON data from api website using get and cors to solve the CORS error problem.  
 
 const fetchRecipes = async () => {
   //let data = await fetch ('https://api.edamam.com/api/recipes/v2?type=public&app_id=c9ea00d4&app_key=7d1cc5532524327230861c2ff28ec975&health=alcohol-free&mealType=Dinner&dishType=Bread&dishType=Main%20course&dishType=Salad&dishType=Soup&random=true&field=label&field=image&field=url&field=dishType',{method:"GET", {mode:"no-cors"}, headers:{"Content-Type": "application/json"}});
@@ -29,11 +29,9 @@ const fetchRecipes = async () => {
 
 //assigning the results of the function to the recipe-results ID
 
-  //const recipeResults = document.getElementById('recipe-results');
- // recipeResults.innerHTML = '';
 
-  
   //function to create each recipe card and assigning the data to a div
+
   const displayRecipes = (data) => { 
     const recipeResults = document.getElementById('recipe-results');
     recipeResults.innerHTML = '';
@@ -42,7 +40,7 @@ const fetchRecipes = async () => {
     const recipeCard = document.createElement('div');
     recipeCard.className = 'recipe-card'; 
 
-  //setting dishType to blank so can iterate through the data and add the info to each recipe card
+    //setting dishType to blank so can iterate through the data and add the info to each recipe card
     let dishType = "";
 
     //conditional to assign the meal type to the recipe card
@@ -83,14 +81,14 @@ const fetchRecipes = async () => {
 };
 
 
- /* const sortRecipes = () => { 
+  const sortRecipes = () => { 
   const sortedResults = document.getElementById('sorted-results'); 
   sortedResults.innerHTML = '';
   sortedResults.innerHTML =  titleArray.sort();
      
   sortedResults.append(sortedResults);
    
-};*/
+};
 
 //event listener to call fetch recipes and then get recipes when the fetchrecipes button is clicked
 //const fetchRecipesButton = document.getElementById('#getRecipes');
