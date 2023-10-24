@@ -4,7 +4,7 @@ import {sortRecipes} from "./sortrecipes.js";
 
 //global variable needed
 // not sure where this variable needs to be let dishType = "";
-titleArray = [];
+let titleArray = [];
 
 //fetching JSON data from api website
 
