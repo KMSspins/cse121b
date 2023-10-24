@@ -98,7 +98,7 @@ let titleArray = [];
 //const fetchRecipesButton = document.getElementById('#getRecipes');
 //fetchRecipesButton.addEventListener('click', fetchRecipes);
 
-document.getElementById('getRecipes').addEventListener('click', fetchRecipes);
+document.getElementById('getRecipes').addEventListener('click', displayRecipes);
 
 //event listener to call sort recipes when the sort recipes button is clicked
 //const sortRecipesButton = document.getElementById('#sortRecipes');
